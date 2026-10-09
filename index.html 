@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HaberPusula - Son Dakika Haberleri</title>
+<meta name="description" content="Türkiye ve dünyadan son dakika haberleri, ekonomi, spor ve teknoloji gelişmeleri.">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f3f5f8;color:#202633;font-family:Arial,sans-serif}
+header{background:#c90024;color:white;padding:20px 16px}
+.brand{font-size:29px;font-weight:800}
+header p{margin:6px 0 0;font-size:13px}
+nav{background:#202633;padding:13px 12px;display:flex;gap:20px;overflow:auto;white-space:nowrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+.container{max-width:900px;margin:auto;padding:16px}
+.breaking{background:#fff;border-left:5px solid #c90024;padding:14px;margin-bottom:18px;font-weight:bold}
+h2{font-size:21px;margin:18px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 9px #00000010}
+.photo{height:115px;background:#e2e6ed;display:flex;align-items:center;justify-content:center;font-size:43px}
+.content{padding:14px}
+.tag{color:#c90024;font-size:12px;font-weight:bold}
+h3{font-size:18px;margin:8px 0}
+.card p{font-size:14px;line-height:1.5;color:#626b79}
+footer{background:#202633;color:white;text-align:center;padding:24px;margin-top:25px;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">🔴 HaberPusula</div>
+<p>Türkiye ve dünyadan gündemin nabzı</p>
+</header>
+<nav>
+<a href="#">Ana Sayfa</a>
+<a href="#gundem">Gündem</a>
+<a href="#ekonomi">Ekonomi</a>
+<a href="#spor">Spor</a>
+<a href="#teknoloji">Teknoloji</a>
+<a href="#dunya">Dünya</a>
+</nav>
+<main class="container">
+<div class="breaking">SON DAKİKA | HaberPusula yayında!</div>
+<h2 id="gundem">📰 Günün Manşetleri</h2>
+<div class="grid">
+<article class="card">
+<div class="photo">📰</div><div class="content">
+<span class="tag">GÜNDEM</span>
+<h3>HaberPusula yayın hayatına başladı</h3>
+<p>Türkiye ve dünyadaki gelişmeleri takip etmek için yeni adresiniz HaberPusula.</p>
+</div></article>
+<article class="card" id="ekonomi">
+<div class="photo">📈</div><div class="content">
+<span class="tag">EKONOMİ</span>
+<h3>Ekonomi gündemi</h3>
+<p>Ekonomi haberleri ve piyasalara dair gelişmeler bu bölümde.</p>
+</div></article>
+<article class="card" id="spor">
+<div class="photo">⚽</div><div class="content">
+<span class="tag">SPOR</span>
+<h3>Spor dünyasından gelişmeler</h3>
+<p>Futbol ve diğer spor dallarından haberler.</p>
+</div></article>
+<article class="card" id="teknoloji">
+<div class="photo">💻</div><div class="content">
+<span class="tag">TEKNOLOJİ</span>
+<h3>Teknoloji gündemi</h3>
+<p>Bilim, teknoloji ve dijital dünyadan gelişmeler.</p>
+</div></article>
+<article class="card" id="dunya">
+<div class="photo">🌍</div><div class="content">
+<span class="tag">DÜNYA</span>
+<h3>Dünyadan haberler</h3>
+<p>Dünyadaki gelişmeler ve uluslararası gündem.</p>
+</div></article>
+</div>
+</main>
+<footer>© 2026 HaberPusula · Gündemin nabzı</footer>
+</body>
+</html>
