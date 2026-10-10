@@ -44,3 +44,4 @@ $('search').oninput=render;$('searchBtn').onclick=render;const drawer=$('drawer'
 document.addEventListener('click',async e=>{let d=e.target.closest('[data-delete]');if(d&&isAdmin&&confirm('Bu haberi silmek istiyor musun?')){let r=await db.from('News').delete().eq('id',d.dataset.delete);if(r.error)alert(r.error.message);await load();await loadAdmin();}let b=e.target.closest('[data-edit]');if(b&&isAdmin){let r=await db.from('News').select('*').eq('id',b.dataset.edit).single();if(r.error)return alert(r.error.message);let n=r.data;$('editId').value=n.id;$('title').value=n.Title??n.title??'';$('summary').value=n.summary??'';$('content').value=n.content??'';$('category').value=n.category??'Gündem';$('published').checked=!!n.published;$('admin').scrollIntoView({behavior:'smooth'});}});
 (async()=>{await load();if(db){db.auth.onAuthStateChange(()=>setTimeout(checkAdmin,0));await checkAdmin();}})();
 </script></body></html>
+aa
